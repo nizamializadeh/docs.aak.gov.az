@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>AdminLTE 3 | DataTables</title>
+
+  <!-- Google Font: Source Sans Pro -->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700&display=fallback">
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="plugins/fontawesome-free/css/all.min.css">
+  <!-- DataTables -->
+  <link rel="stylesheet" href="plugins/datatables-bs4/css/dataTables.bootstrap4.min.css">
+  <link rel="stylesheet" href="plugins/datatables-responsive/css/responsive.bootstrap4.min.css">
+  <link rel="stylesheet" href="plugins/datatables-buttons/css/buttons.bootstrap4.min.css">
+  <!-- Theme style -->
+  <link rel="stylesheet" href="dist/css/adminlte.min.css">
+</head>
+<style type="text/css">
+  .content-wrapper {
+    background-color: #f9f7f5;
+}
+</style>
+<body class="hold-transition sidebar-mini">
+<div class="wrapper">
+  <!-- Navbar -->
+
+
+  <!-- Main Sidebar Container -->
+  <aside class="main-sidebar sidebar-dark-primary elevation-4">
+
+
+    <!-- Sidebar -->
+    <div class="sidebar">
+      <!-- Sidebar user (optional) -->
+      <div class="user-panel mt-3 pb-3 mb-3 d-flex">
+     
+        <div class="info">
+          <a href="#" class="d-block">Arif  Məmmədov</a>
+        </div>
+      </div>
+
+  
+
+      <!-- Sidebar Menu -->
+    <nav class="mt-2">
+        <ul class="nav nav-pills nav-sidebar flex-column" data-widget="treeview" role="menu" data-accordion="false">
+          <!-- Add icons to the links using the .nav-icon class
+               with font-awesome or any other icon font library -->
+       
+<!-- 
+          <li class="nav-item">
+            <a href="#" class="nav-link">
+                  <p>Dissertasiya şurası FD 1.12</p>
+            </a>
+          </li> -->
+      
+    
+              <li class="nav-item">
+            <a href="" class="nav-link">
+              <i class="far fa-circle nav-icon"></i>
+              <p>
+             Sənəd yüklə 
+                <i class="fas fa-angle-left right"></i>
+              </p>
+            </a>
+            <ul class="nav nav-treeview">
+              <li class="nav-item">
+                <a href="tekrar_elmiderece.html" class="nav-link">
+                  <i class="far fa-circle nav-icon"></i>
+                  <p>Elmi dərəcə</p>
+                </a>
+              </li>
+             <li class="nav-item">
+                <a href="tekrar_elmiad.html" class="nav-link">
+                  <i class="far fa-circle nav-icon"></i>
+                  <p>Elmi ad</p>
+                </a>
+              </li>
+           
+            </ul>
+          </li>
+               <li class="nav-item">
+            <a href="tekrar_attestasya_index.html" class="nav-link">
+                  <i class="far fa-circle nav-icon"></i>
+                  <p>Sənədlər </p>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="../widgets.html" class="nav-link">
+              <i class="nav-icon fas fa-envelope"></i>
+              <p>
+                Məktublar
+                <span class="right badge badge-danger">New</span>
+              </p>
+            </a>
+          </li>
+
+      
+     
+        </ul>
+      </nav>
+      <!-- /.sidebar-menu -->
+    </div>
+    <!-- /.sidebar -->
+  </aside>
+
+  <!-- Content Wrapper. Contains page content -->
+  <div class="content-wrapper">
+    <!-- Content Header (Page header) -->
+    <section class="content-header">
+
+    </section>
+
+    <!-- Main content -->
+    <section class="content">
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-12">
+          
+
+
+
+
+        <div class="container ">
+             <form>
+  <div class="form-group mt-3">
+    <label for="exampleInputEmail1">
+İddiaçının şəxsi ərizəsi və ya iş yerindən vəsatət məktubu
+    </label>
+    <input multiple type="file" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
+  </div>
+
+
+
+
+    <div class="form-group mt-3">
+    <label for="exampleInputEmail1">
+İddiaçının şəxsiyyət vəsiqəsinin (əcnəbilər və vətəndaşlığı olmayan şəxslər üçün pasportun) surəti
+    </label>
+    <input type="file" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
+  </div>
+
+ 
+    <div class="form-group mt-3">
+    <label for="exampleInputEmail1">
+ İddiaçının şəxsi məlumat vərəqi (işləyənlər üçün əsas iş yerində möhürlə təsdiq olunmalıdır) (AAK tərəfindən təsdiq olunan Forma əsasında doldurulmalıdır)
+    </label>
+    <input type="file" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
+  </div>
+
+
+ 
+    <div class="form-group mt-3">
+    <label for="exampleInputEmail1">
+İddiaçının (Azərbaycan Respublikasının vətəndaşları üçün) əmək kitabçasının əsas iş yerində təsdiq olunmuş surəti (işləməyənlər üçün isə notariat qaydasında təsdiq edilmiş surəti)
+    </label>
+    <input type="file" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
+  </div>
+
+
+ 
+    <div class="form-group mt-3">
+    <label for="exampleInputEmail1">
+Xarici ölkələrdə verilmiş və müvafiq qaydada leqallaşdırılmış (və ya apostil olunmuş) elmi ad haqqında sənəd və onun Azərbaycan dilinə tərcüməsinin notariat qaydasında təsdiq edilmiş surəti
+    </label>
+    <input type="file" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
+  </div>
+
+
+ 
+    <div class="form-group mt-3">
+    <label for="exampleInputEmail1">
+İddiaçının ali təhsil haqqında diplomunun notariat qaydasında təsdiq edilmiş surəti. Xaricdə təhsil almış iddiaçı üçün əlavə olaraq Azərbaycan Respublikasının Təhsil Nazirliyi tərəfindən xarici dövlətlərin ali təhsilə aid kvalifikasiyalarının tanınmasına dair verilmiş sənədin notariat qaydasında təsdiq edilmiş surəti (keçmiş SSRİ-nin tərkibində olan dövlətlərin ali təhsil müəssisələri tərəfindən 1991-1992-ci tədris ili və ondan əvvəlki illərdə verilmiş təhsil sənədlərinə münasibətdə kvalifikasiyaların tanınması tələb edilmir)
+    </label>
+    <input type="file" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
+  </div>
+
+
+ 
+    <div class="form-group mt-3">
+    <label for="exampleInputEmail1">
+İddiaçının fəlsəfə doktoru və/və ya elmlər doktoru elmi dərəcəsi diplomlarının notariat qaydasında təsdiq edilmiş surəti. Elmi dərəcəsini xaricdə almış iddiaçı üçün əlavə olaraq elmi dərəcə haqqında sənədin nostrifikasiyası və ya təkrar attestasiyası əsasında tanınması barədə Komissiya tərəfindən verilmiş sənədin surəti (01.02.1994-cü il tarixinə qədər elmi dərəcəsini keçmiş SSRİ-nin tərkibində olan dövlətlərdə almış iddiaçılara münasibətdə elmi dərəcə haqqında sənədin nostrifikasiyası və ya təkrar attestasiyası əsasında tanınması tələb edilmir);
+    </label>
+    <input type="file" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
+  </div>
+
+
+ 
+    <div class="form-group mt-3">
+    <label for="exampleInputEmail1">
+Professor elmi adı iddiaçısı üçün dosent attestatının notariat qaydasında təsdiq edilmiş surəti. Dosent elmi adını xaricdə almış iddiaçı üçün əlavə olaraq elmi ad haqqında sənədin nostrifikasiyası və ya təkrar attestasiya əsasında tanınması barədə Komissiya tərəfindən verilmiş sənədin surəti (01.02.1994-cü il tarixinə qədər elmi adını keçmiş SSRİ-nin tərkibində olan dövlətlərdə almış iddiaçılara münasibətdə elmi ad haqqında sənədin nostrifikasiyası və ya təkrar attestasiya əsasında tanınması tələb edilmir)
+    </label>
+    <input type="file" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
+  </div>
+
+
+ 
+    <div class="form-group mt-3">
+    <label for="exampleInputEmail1">
+Xarici ölkədə verilmiş elmi ad haqqında sənədin nostrifikasiyası və ya təkrar attestasiya əsasında tanınması üçün qeydiyyat vərəqi (Əlavə 7.1 və Əlavə 7.1.1)
+    </label>
+    <input type="file" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
+  </div>
+
+  
+ 
+    <div class="form-group mt-3">
+    <label for="exampleInputEmail1">
+ İddiaçının dərc olunmuş elmi və tədris-metodiki işlərinin müvafiq qaydada tərtib edilmiş siyahısı (o cümlədən elektron daşıyıcıda) (Əlavə 7.2)
+    </label>
+    <input type="file" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
+  </div>
+
+ 
+    <div class="form-group mt-3">
+    <label for="exampleInputEmail1">
+ İddiaçının dərc olunmuş elmi və tədris-metodiki işlərinin (Azərbaycan Respublikası Prezidentinin 11iyun 2019-cu il tarixli 728 nömrəli Fərmanı ilə təsdiq edilmiş “Elmi adlar verilməsi qaydası haqqında Əsasnamə” ilə elmi ad iddiaçıları üçün beynəlxalq xülasələndirmə və indeksləmə sistemlərinə (bazalarına) daxil olan dövri elmi nəşrlərdə məqalə dərc edilməsinə dair müəyyən edilmiş şərtlər ödənilməklə) surətləri (o cümlədən elektron daşıyıcıda)
+    </label>
+    <input type="file" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
+  </div>
+
+
+ 
+    <div class="form-group mt-3">
+    <label for="exampleInputEmail1">
+  İddiaçının attestasiya işində olan sənədlərin siyahısı (Əlavə 7.3)
+    </label>
+    <input type="file" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
+  </div>
+
+
+ 
+
+
+
+
+
+
+
+
+<div class="container " style="margin-bottom: 150px;">
+      <button type="submit" class="btn  btn-success mt-5">Göndər </button>
+
+</div>
+
+
+</form>
+  
+    </div>
+
+
+
+    
+        <!-- Footer -->
+        <footer style="border-top: 5px solid #BFB4A9; text-align: center; background-color: #f9f7f5;">
+
+
+            <div class="bg11">
+                <div class="container size-h-4 flex-c-c p-tb-15 fMain" style=" padding: 20px; ">
+
+                        <span class="rFooterText" style="color: #715742;font-size: 14px!important;">
+
+                            © 2024 Azərbaycan Respublikasının Prezidenti yanında Ali Attestasiya Komissiyası. Müəllif hüquqları qorunur.
+                        </span>
+
+
+                </div>
+            </div>
+        </footer>
+   
+
+            <!-- /.card -->
+          </div>
+          <!-- /.col -->
+        </div>
+        <!-- /.row -->
+      </div>
+      <!-- /.container-fluid -->
+    </section>
+    <!-- /.content -->
+  </div>
+  <!-- /.content-wrapper -->
+<!--   <footer class="main-footer">
+    <div class="float-right d-none d-sm-block">
+      <b>Version</b> 3.2.0
+    </div>
+    <strong>Copyright &copy; 2014-2021 <a href="https://adminlte.io">AdminLTE.io</a>.</strong> All rights reserved.
+  </footer> -->
+
+  <!-- Control Sidebar -->
+  <aside class="control-sidebar control-sidebar-dark">
+    <!-- Control sidebar content goes here -->
+  </aside>
+  <!-- /.control-sidebar -->
+</div>
+<!-- ./wrapper -->
+
+<!-- jQuery -->
+<script src="plugins/jquery/jquery.min.js"></script>
+<!-- Bootstrap 4 -->
+<script src="plugins/bootstrap/js/bootstrap.bundle.min.js"></script>
+<!-- DataTables  & Plugins -->
+<script src="plugins/datatables/jquery.dataTables.min.js"></script>
+<script src="plugins/datatables-bs4/js/dataTables.bootstrap4.min.js"></script>
+<script src="plugins/datatables-responsive/js/dataTables.responsive.min.js"></script>
+<script src="plugins/datatables-responsive/js/responsive.bootstrap4.min.js"></script>
+<script src="plugins/datatables-buttons/js/dataTables.buttons.min.js"></script>
+<script src="plugins/datatables-buttons/js/buttons.bootstrap4.min.js"></script>
+<script src="plugins/jszip/jszip.min.js"></script>
+<script src="plugins/pdfmake/pdfmake.min.js"></script>
+<script src="plugins/pdfmake/vfs_fonts.js"></script>
+<script src="plugins/datatables-buttons/js/buttons.html5.min.js"></script>
+<script src="plugins/datatables-buttons/js/buttons.print.min.js"></script>
+<script src="plugins/datatables-buttons/js/buttons.colVis.min.js"></script>
+<!-- AdminLTE App -->
+<script src="dist/js/adminlte.min.js"></script>
+<!-- AdminLTE for demo purposes -->
+<script src="dist/js/demo.js"></script>
+<!-- Page specific script -->
+<!-- <script>
+  $(function () {
+    $("#example1").DataTable({
+      "responsive": true, "lengthChange": false, "autoWidth": false,
+      // "buttons": ["copy", "csv", "excel", "pdf", "print", "colvis"]
+    }).buttons().container().appendTo('#example1_wrapper .col-md-6:eq(0)');
+    $('#example2').DataTable({
+      "paging": true,
+      "lengthChange": false,
+      "searching": false,
+      "ordering": true,
+      "info": true,
+      "autoWidth": false,
+      "responsive": true,
+    });
+  });
+</script> -->
+</body>
+</html>

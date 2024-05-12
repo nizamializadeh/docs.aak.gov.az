@@ -1,0 +1,516 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>AdminLTE 3 | DataTables</title>
+
+  <!-- Google Font: Source Sans Pro -->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700&display=fallback">
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="plugins/fontawesome-free/css/all.min.css">
+  <!-- DataTables -->
+  <link rel="stylesheet" href="plugins/datatables-bs4/css/dataTables.bootstrap4.min.css">
+  <link rel="stylesheet" href="plugins/datatables-responsive/css/responsive.bootstrap4.min.css">
+  <link rel="stylesheet" href="plugins/datatables-buttons/css/buttons.bootstrap4.min.css">
+  <!-- Theme style -->
+  <link rel="stylesheet" href="dist/css/adminlte.min.css">
+</head>
+<style type="text/css">
+  .content-wrapper {
+    background-color: #f9f7f5;
+}
+</style>
+<body class="hold-transition sidebar-mini">
+<div class="wrapper">
+  <!-- Navbar -->
+
+
+  <!-- Main Sidebar Container -->
+  <aside class="main-sidebar sidebar-dark-primary elevation-4">
+
+
+    <!-- Sidebar -->
+    <div class="sidebar">
+      <!-- Sidebar user (optional) -->
+      <div class="user-panel mt-3 pb-3 mb-3 d-flex">
+     
+        <div class="info">
+          <a href="#" class="d-block">Arif  Məmmədov</a>
+        </div>
+      </div>
+
+  
+
+      <!-- Sidebar Menu -->
+    <nav class="mt-2">
+        <ul class="nav nav-pills nav-sidebar flex-column" data-widget="treeview" role="menu" data-accordion="false">
+          <!-- Add icons to the links using the .nav-icon class
+               with font-awesome or any other icon font library -->
+       
+
+          <li class="nav-item">
+            <a href="#" class="nav-link">
+                  <p>Dissertasiya şurası FD 1.12</p>
+            </a>
+          </li>
+      
+    
+              <li class="nav-item">
+            <a href="" class="nav-link">
+              <i class="far fa-circle nav-icon"></i>
+              <p>
+             Sənəd yüklə 
+                <i class="fas fa-angle-left right"></i>
+              </p>
+            </a>
+            <ul class="nav nav-treeview">
+              <li class="nav-item">
+                <a href="fd.html" class="nav-link">
+                  <i class="far fa-circle nav-icon"></i>
+                  <p>Fəlsəfə doktoru</p>
+                </a>
+              </li>
+             <li class="nav-item">
+                <a href="ed.html" class="nav-link">
+                  <i class="far fa-circle nav-icon"></i>
+                  <p>Elmlər doktoru</p>
+                </a>
+              </li>
+           
+            </ul>
+          </li>
+               <li class="nav-item">
+            <a href="senddocs.html" class="nav-link">
+                  <i class="far fa-circle nav-icon"></i>
+                  <p>Sənədlər </p>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="../widgets.html" class="nav-link">
+              <i class="nav-icon fas fa-envelope"></i>
+              <p>
+                Məktublar
+                <span class="right badge badge-danger">New</span>
+              </p>
+            </a>
+          </li>
+
+      
+     
+        </ul>
+      </nav>
+      <!-- /.sidebar-menu -->
+    </div>
+    <!-- /.sidebar -->
+  </aside>
+
+  <!-- Content Wrapper. Contains page content -->
+  <div class="content-wrapper">
+    <!-- Content Header (Page header) -->
+    <section class="content-header">
+
+    </section>
+
+    <!-- Main content -->
+    <section class="content">
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-12">
+          
+
+
+
+
+        <div class="container ">
+             <form>
+  <div class="form-group mt-3">
+    <label for="exampleInputEmail1">
+       Elmi dərəcə verilməsi üçün elmi müəssisə və təşkilatın, ali təhsil müəssisəsinin blankında yazılmış və dissertasiya şurasının sədri tərəfindən imzalanmış vəsatət məktubu
+    </label>
+    <input multiple type="file" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
+  </div>
+
+
+
+
+    <div class="form-group mt-3">
+    <label for="exampleInputEmail1">
+    İddiaçının şəxsiyyət vəsiqəsinin surəti (əcnəbilər və vətəndaşlığı olmayan şəxslər üçün pasportunun notariat qaydasında təsdiq olunmuş surəti)
+    </label>
+    <input type="file" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
+  </div>
+
+ 
+    <div class="form-group mt-3">
+    <label for="exampleInputEmail1">
+  İddiaçının şəxsi məlumat vərəqi (AAK tərəfindən təsdiq olunan Forma əsasında doldurularaq işləyənlər üçün əsas iş yerində, işləməyənlər üçün isə dissertasiya işinin yerinə yetirildiyi və ya iddiaçının təhkim olunduğu elmi müəssisə və təşkilatda, ali təhsil müəssisəsində təsdiq olunmalıdır)
+    </label>
+    <input type="file" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
+  </div>
+
+
+ 
+    <div class="form-group mt-3">
+    <label for="exampleInputEmail1">
+     İddiaçının əmək kitabçasının əsas iş yerində (işləməyənlər üçün işinin yerinə yetirildiyi və ya iddiaçının təhkim olunduğu elmi müəssisə və təşkilatda, ali təhsil müəssisəsində) təsdiq olunmuş surəti
+    </label>
+    <input type="file" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
+  </div>
+
+
+ 
+    <div class="form-group mt-3">
+    <label for="exampleInputEmail1">
+      İddiaçının doktoranturaya qəbulu və ya dissertant təhkim olunması haqqında qərarın (əmrin) surəti
+    </label>
+    <input type="file" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
+  </div>
+
+
+ 
+    <div class="form-group mt-3">
+    <label for="exampleInputEmail1">
+      Dissertasiya mövzusunun müəyyən edilməsi və elmi rəhbərin və ya elmi məsləhətçinin təsdiq olunması və ya onların dəyişdirilməsi haqqında elmi müəssisə və təşkilatın, ali təhsil müəssisəsinin elmi (elmi-texniki) şurasının iclasının protokolundan çıxarış (müvafiq qaydada təsdiq olunmalıdır)
+    </label>
+    <input type="file" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
+  </div>
+
+
+ 
+    <div class="form-group mt-3">
+    <label for="exampleInputEmail1">
+    Dissertasiya mövzusunun Azərbaycan Respublikası Elmi Tədqiqatların Əlaqələndirilməsi Şurasının elmi istiqamətlər üzrə elmi şurasında təsdiq olunması və ya dəyişdirilməsi haqqında sənədin surəti
+    </label>
+    <input type="file" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
+  </div>
+
+
+ 
+    <div class="form-group mt-3">
+    <label for="exampleInputEmail1">
+     Fəlsəfə doktoru imtahanları üzrə onların nəticəsini özündə əks etdirən müvafiq şəhadətnamələr (ixtisas fənni üzrə şəhadətnamələr imtahan protokolunun surəti ilə birlikdə təqdim edilir)
+    </label>
+    <input type="file" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
+  </div>
+
+
+ 
+    <div class="form-group mt-3">
+    <label for="exampleInputEmail1">
+     Fəlsəfə doktoru və ya elmlər doktoru elmi dərəcəsi iddiaçısının dissertasiyasının profili üzrə ali təhsili olmadıqda həmin elm sahəsinin ümumelmi əsaslarından əlavə imtahanın nəticəsini özündə əks etdirən sənədin vəsatət qaldıran elmi müəssisə və təşkilatda, ali təhsil müəssisəsində təsdiq edilmiş surəti
+    </label>
+    <input type="file" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
+  </div>
+
+  
+ 
+    <div class="form-group mt-3">
+    <label for="exampleInputEmail1">
+      Pedaqogika üzrə fəlsəfə doktoru elmi dərəcəsi iddiaçısı üçün onun pedaqoji fəaliyyətlə məşğul olduğu müvafiq təhsil müəssisəsindən pedaqoji iş stajı haqqında arayış
+    </label>
+    <input type="file" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
+  </div>
+
+ 
+    <div class="form-group mt-3">
+    <label for="exampleInputEmail1">
+     Dissertasiya işinin cildlənmiş, müdafiənin keçirildiyi elmi müəssisə və təşkilatda, ali təhsil müəssisəsində tikilmiş və möhürlə təsdiq edilmiş nüsxəsi və onun “MS WORD” mətn redaktorunda elektron versiyası
+    </label>
+    <input type="file" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
+  </div>
+
+
+ 
+    <div class="form-group mt-3">
+    <label for="exampleInputEmail1">
+     Avtoreferat (Əlavə 1.4) – Azərbaycan dilində 10 nüsxə (1 nüsxə sənədlərə tikilməlidir), ingilis dilində 5 nüsxə, rus dilində (avtoreferat rus dilində yazıldıqda) 5 nüsxə və onların “MS WORD” mətn redaktorunda elektron versiyaları
+    </label>
+    <input type="file" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
+  </div>
+
+
+ 
+    <div class="form-group mt-3">
+    <label for="exampleInputEmail1">
+       Elmlər doktoru elmi dərəcəsi iddiaçısı üçün fəlsəfə doktoru dissertasiyasının cildlənmiş nüsxəsi, avtoreferatı və “MS WORD” mətn redaktorunda elektron versiyası
+    <input type="file" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
+  </div>
+
+
+ 
+    <div class="form-group mt-3">
+    <label for="exampleInputEmail1">
+      İddiaçının ali təhsil haqqında diplomunun və ona əlavənin (xaricdə təhsil almış iddiaçı üçün əlavə olaraq Azərbaycan Respublikasının Təhsil Nazirliyi tərəfindən xarici dövlətlərin ali təhsilə aid kvalifikasiyalarının tanınmasına dair verilmiş sənədin) notariat qaydasında təsdiq edilmiş surətləri
+    </label>
+    <input type="file" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
+  </div>
+
+
+ 
+    <div class="form-group mt-3">
+    <label for="exampleInputEmail1">
+      Elmlər doktoru elmi dərəcəsi iddiaçısı üçün fəlsəfə doktoru diplomunun (elmi dərəcəsini xaricdə almış iddiaçı üçün əlavə olaraq elmi dərəcə sənədinin nostrifikasiyası və ya təkrar attestasiya əsasında tanınması haqqında Komissiya tərəfindən verilmiş sənədin) surəti
+    </label>
+    <input type="file" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
+  </div>
+
+
+ 
+    <div class="form-group mt-3">
+    <label for="exampleInputEmail1">
+      Elmi rəhbər və ya elmi məsləhətçi tərəfindən imzalanmış və onun əsas iş yerində təsdiqlənmiş rəy
+    </label>
+    <input type="file" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
+  </div>
+
+
+
+ 
+    <div class="form-group mt-3">
+    <label for="exampleInputEmail1">
+ Dissertasiya işinin yerinə yetirildiyi və ya iddiaçının təhkim olunduğu elmi müəssisə və təşkilatda, ali təhsil müəssisəsində dissertasiya işinin ilkin müzakirəsi üçün mütəxəssislər tərəfindən verilmiş rəylər (imzalanmalı və ilkin müzakirənin keçirildiyi elmi müəssisə və təşkilatda, ali təhsil müəssisəsində təsdiqlənməlidir), dissertasiya işinin ilkin müzakirəsinin keçirildiyi iclasın müvafiq qaydada təsdiq olunmuş geniş protokolu və dissertasiya haqqında rəy, ilkin müzakirənin gedişinin videoçəkilişi (elektron daşıyıcıda)
+    </label>
+    <input type="file" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
+  </div>
+
+ 
+    <div class="form-group mt-3">
+    <label for="exampleInputEmail1">
+
+Dissertasiya şurasının nəzdində fəaliyyət göstərən elmi seminarın protokolu, elmi seminarda verilən rəylər (imzalanmalı və dissertasiya şurasının fəaliyyət göstərdiyi elmi müəssisə və təşkilatın, ali təhsil müəssisəsinin elmi katibi tərəfindən müvafiq qaydada təsdiq olunmalıdır) və elmi seminarın gedişinin videoçəkilişi (o cümlədən elektron daşıyıcıda)
+    </label>
+    <input type="file" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
+  </div>
+
+ 
+    <div class="form-group mt-3">
+    <label for="exampleInputEmail1">
+      Dissertasiyanın avtoreferatının AAK-ın müəyyən etdiyi siyahı üzrə zəruri ünvanlara (Əlavə 1.6) göndərildiyini təsdiq edən sənəd
+    </label>
+    <input type="file" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
+  </div>
+
+ 
+    <div class="form-group mt-3">
+    <label for="exampleInputEmail1">
+      
+      Dissertasiya şurasının sədri və elmi katibi tərəfindən imzalanmış iclasın stenoqramı, rəsmi opponentlərin rəyləri (imzalanmalı və dissertasiya şurasının fəaliyyət göstərdiyi elmi müəssisə və təşkilatda, ali təhsil müəssisəsində təsdiqlənməlidir) və avtoreferata verilən rəylər (rəy verildiyi təqdirdə)
+    </label>
+    <input type="file" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
+  </div>
+
+ 
+    <div class="form-group mt-3">
+    <label for="exampleInputEmail1">
+    Rəsmi opponentlərin iş yerindən arayış
+    </label>
+    <input type="file" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
+  </div>
+
+ 
+    <div class="form-group mt-3">
+    <label for="exampleInputEmail1">
+      Dissertasiya şurasının iclasında iştiraketmə vərəqi (Əlavə 1.7)
+    </label>
+    <input type="file" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
+  </div>
+
+ 
+    <div class="form-group mt-3">
+    <label for="exampleInputEmail1">
+     Dissertasiya şurasında gizli səsvermənin keçirilməsi üçün yaradılmış hesablama komissiyası protokolunun surəti (Əlavə 1.9)
+    </label>
+    <input type="file" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
+  </div>
+
+
+
+
+
+    <div class="form-group mt-3">
+    <label for="exampleInputEmail1">
+
+    	Dissertasiya müdafiəsinin gedişinin videoçəkilişi (elektron daşıyıcıda)
+
+    </label>
+    <input type="file" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
+  </div>
+
+  <div class="form-group mt-3">
+    <label for="exampleInputEmail1">
+
+    	Fəlsəfə doktoru və ya elmlər doktoru elmi dərəcəsi verilməsi haqqında arayış (Əlavə 1.10 və Əlavə 1.10.1) (o cümlədən elektron daşıyıcıda)
+    </label>
+    <input type="file" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
+  </div>
+
+  <div class="form-group mt-3">
+    <label for="exampleInputEmail1">
+
+    	Elmi dərəcə almaq üçün qeydiyyat vərəqi (Əlavə 1.11)
+    </label>
+    <input type="file" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
+  </div>
+
+  <div class="form-group mt-3">
+    <label for="exampleInputEmail1">
+
+    	Dissertasiyanın qeydiyyat vərəqi (Əlavə 1.12) və dissertasiyanın xülasəsi (Əlavə 1.12.1)
+    </label>
+    <input type="file" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
+  </div>
+
+  <div class="form-group mt-3">
+    <label for="exampleInputEmail1">
+
+    	Dissertasiyanın mövzusuna dair dərc olunmuş elmi işlərin dissertasiya işinin yerinə yetirildiyi və ya iddiaçının təhkim olunduğu elmi müəssisə və təşkilatda, ali təhsil müəssisəsində təsdiq olunmuş siyahısı (o cümlədən elektron daşıyıcıda) (Əlavə 1.15)
+    </label>
+    <input type="file" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
+  </div>
+
+
+  <div class="form-group mt-3">
+    <label for="exampleInputEmail1">
+Dissertasiyanın mövzusuna dair dərc olunmuş elmi işlərin surətləri (o cümlədən elektron daşıyıcıda)
+    	
+    </label>
+    <input type="file" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
+  </div>
+
+
+  <div class="form-group mt-3">
+    <label for="exampleInputEmail1">
+
+    	Həmmüəllifli elmi işlərdə iddiaçının şəxsi payı göstərilmədikdə iddiaçının həmin işlərdə şəxsi payını əks etdirən, iddiaçı və həmmüəlliflər tərəfindən imzalanmış, elmi müəssisə və təşkilatın, ali təhsil müəssisəsinin əsas möhürü ilə və ya notariat qaydasında təsdiq edilmiş arayış (hər hansı bir səbəbdən iddiaçının şəxsi payını müəyyən etmək mümkün olmadıqda həmin işləri çapa tövsiyə edən elmi müəssisə və təşkilatın, ali təhsil müəssisəsinin əsas möhürü ilə təsdiq edilmiş iddiaçının şəxsi payını əks etdirən arayış)
+    </label>
+    <input type="file" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
+  </div>
+
+
+  <div class="form-group mt-3">
+    <label for="exampleInputEmail1">
+
+    	Dissertasiya işində elmi plagiatın aşkar edilməməsinə dair arayış (Əlavə 1.16.1)
+    </label>
+    <input type="file" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
+  </div>
+
+
+
+  <div class="form-group mt-3">
+    <label for="exampleInputEmail1">
+
+    	Elmi dərəcə verilməsi üçün iddiaçının attestasiya işində olan sənədlərin siyahısı (Əlavə 1.17.1)
+    </label>
+    <input type="file" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
+  </div>
+
+
+ 
+
+
+
+
+
+
+
+
+<div class="container " style="margin-bottom: 150px;">
+      <button type="submit" class="btn  btn-success mt-5">Göndər </button>
+
+</div>
+
+
+</form>
+  
+    </div>
+
+
+
+    
+        <!-- Footer -->
+        <footer style="border-top: 5px solid #BFB4A9; text-align: center; background-color: #f9f7f5;">
+
+
+            <div class="bg11">
+                <div class="container size-h-4 flex-c-c p-tb-15 fMain" style=" padding: 20px; ">
+
+                        <span class="rFooterText" style="color: #715742;font-size: 14px!important;">
+
+                            © 2024 Azərbaycan Respublikasının Prezidenti yanında Ali Attestasiya Komissiyası. Müəllif hüquqları qorunur.
+                        </span>
+
+
+                </div>
+            </div>
+        </footer>
+   
+
+            <!-- /.card -->
+          </div>
+          <!-- /.col -->
+        </div>
+        <!-- /.row -->
+      </div>
+      <!-- /.container-fluid -->
+    </section>
+    <!-- /.content -->
+  </div>
+  <!-- /.content-wrapper -->
+<!--   <footer class="main-footer">
+    <div class="float-right d-none d-sm-block">
+      <b>Version</b> 3.2.0
+    </div>
+    <strong>Copyright &copy; 2014-2021 <a href="https://adminlte.io">AdminLTE.io</a>.</strong> All rights reserved.
+  </footer> -->
+
+  <!-- Control Sidebar -->
+  <aside class="control-sidebar control-sidebar-dark">
+    <!-- Control sidebar content goes here -->
+  </aside>
+  <!-- /.control-sidebar -->
+</div>
+<!-- ./wrapper -->
+
+<!-- jQuery -->
+<script src="plugins/jquery/jquery.min.js"></script>
+<!-- Bootstrap 4 -->
+<script src="plugins/bootstrap/js/bootstrap.bundle.min.js"></script>
+<!-- DataTables  & Plugins -->
+<script src="plugins/datatables/jquery.dataTables.min.js"></script>
+<script src="plugins/datatables-bs4/js/dataTables.bootstrap4.min.js"></script>
+<script src="plugins/datatables-responsive/js/dataTables.responsive.min.js"></script>
+<script src="plugins/datatables-responsive/js/responsive.bootstrap4.min.js"></script>
+<script src="plugins/datatables-buttons/js/dataTables.buttons.min.js"></script>
+<script src="plugins/datatables-buttons/js/buttons.bootstrap4.min.js"></script>
+<script src="plugins/jszip/jszip.min.js"></script>
+<script src="plugins/pdfmake/pdfmake.min.js"></script>
+<script src="plugins/pdfmake/vfs_fonts.js"></script>
+<script src="plugins/datatables-buttons/js/buttons.html5.min.js"></script>
+<script src="plugins/datatables-buttons/js/buttons.print.min.js"></script>
+<script src="plugins/datatables-buttons/js/buttons.colVis.min.js"></script>
+<!-- AdminLTE App -->
+<script src="dist/js/adminlte.min.js"></script>
+<!-- AdminLTE for demo purposes -->
+<script src="dist/js/demo.js"></script>
+<!-- Page specific script -->
+<!-- <script>
+  $(function () {
+    $("#example1").DataTable({
+      "responsive": true, "lengthChange": false, "autoWidth": false,
+      // "buttons": ["copy", "csv", "excel", "pdf", "print", "colvis"]
+    }).buttons().container().appendTo('#example1_wrapper .col-md-6:eq(0)');
+    $('#example2').DataTable({
+      "paging": true,
+      "lengthChange": false,
+      "searching": false,
+      "ordering": true,
+      "info": true,
+      "autoWidth": false,
+      "responsive": true,
+    });
+  });
+</script> -->
+</body>
+</html>
